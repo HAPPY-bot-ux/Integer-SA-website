@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+      
+         <meta charset="UTF-8">
+         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>Integergroup SA-Financial Services</title>
+         <link rel="stylesheet" href="assets/css/styles.css">
+         <link rel= "stylesheet" href= "https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" >
+         <style>
+        /* Add this CSS for active link styling */
+        .nav-links a {
+            text-decoration: none;
+            color: #000;
+            padding: 10px;
+            transition: color 0.3s;
+        }
+
+        .nav-links a.active {
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+     </head>
+     <body>
+
+      
+
+        <!-- Navbar start-->
+        <div class="navbar">
+          <div class="container">
+              <a href="index.html"><img class="brand" src="assets/images/logo-web.png" alt="img"></a>
+              <ul class="nav-links ">
+                  <li><a href="#hero" class="nav-link">Home</a></li>
+                  <li><a href="#services" class="nav-link">Services</a></li>
+                  <li><a href="#about" class="nav-link">About Us</a></li>
+                  <li><a href="mission.html" class="nav-link">Mission</a></li>
+                  <li><a href="#training" class="nav-link">Training</a></li>
+                  <li><a href="index.html#reviews" class="nav-link">Reviews</a></li>
+                  <li><a href="#contact" class="nav-link">Contact Us</a></li>                                                   
+              </ul>
+              <div class="hamburger">
+                  <span></span>
+                  <span></span>
+              </div>
+          </div>
+      </div>
+
+       <!-- Add your sections here -->
+  
+
+    <script>
+        // Add event listener to handle scroll events
+        window.addEventListener('scroll', () => {
+            // Get all sections and navbar links
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            let currentSection = '';
+
+            // Loop through sections to determine which is in view
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;  // Adjust offset for better detection
+                const sectionHeight = section.clientHeight;
+
+                if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+                    currentSection = section.getAttribute('id');
+                }
+            });
+
+            // Remove active class from all links and add to the current one
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').includes(currentSection)) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+         <!-- Navbar End-->
+
+         <div id="loading-screen">
+          <div class="loader">
+              <div class="dot">€</div>  <!-- Euro -->
+              <div class="dot">£</div>  <!-- Pound Sterling -->
+              <div class="dot">$</div>  <!-- Dollar -->
+          </div>
+      </div>
+
+      
+      
+      
+         <!-- Hero Start -->
+          <div id="hero">
+            <div class="container">
+                  <h1 class="heading-xl"><span id="hero-titles"></span></h1>
+                  <a href="#services" class="scroll-to-down"><i class="las la-arrow-down"></i></a>
+            </div>
+          </div>
+         <!-- Hero End -->
+      
+         <!-- Services start -->
+           <section id="services">
+               <div class="container">
+                     <div class="section-intro">
+                        <div class="heading-2" style="font-size: 25px;">Our Services</div>
+                     </div>
+                     <div class="grid three-col-grid">
+                        <div class="service">
+                         <div class="icon"><i class="las la-tools"></i></div>
+                         <h3 class="heading-3">Client Portfolio Management</h3>
+                         <p>Integer Group SA specializes in establishing new client relationships and maintaining existing portfolios with professionalism and fairness.</p>                          
+                        </div>
+                  
+                        <div class="service">
+                        <div class="icon"><i class="las la-feather"></i></div>
+                        <h3 class="heading-3"> Self-Help Financial Solutions & Trading Software</h3>
+                        <p>Integer Group SA offers self-help financial solutions through software programs like Plus 500.</p>                          
+                        </div>
+                                  
+                        <div class="service">
+                        <div class="icon"><i class="las la-tv"></i></div>
+                        <h3 class="heading-3"> Investment Opportunities & Personalized Coaching</h3>
+                        <p>Established in 2013, Integer Group SA provides investment opportunities through affiliations and offers online software products to help clients achieve financial growth.</p>                          
+                        </div>
+
+                        <div class="service">
+                        <div class="icon"><i class="las la-ruler"></i></div>
+                        <h3 class="heading-3">FOREX Trading Account Management & Support</h3>
+                        <p> Integer Group SA provides comprehensive support for opening and managing online FOREX trading accounts.This service includes assistance with account setup, funding, and real-time updates on currency rates, tax implications, and fraud prevention.</p>                          
+                       </div>
+                  
+                       <div class="service">
+                        <div class="icon"><i class="las la-pencil-ruler"></i></div>
+                        <h3 class="heading-3"> Educational Programs on Fundamental & Technical Analysis</h3>
+                        <p> Integer Group SA offers educational programs focused on fundamental and technical analysis, designed to simplify complex trading concepts for beginners.</p>                          
+                       </div>
+                 
+                       <div class="service">
+                        <div class="icon"><i class="lab la-gg"></i></div>
+                        <h3 class="heading-3"> Client Communication & Risk Management Services</h3>
+                        <p>To address common fears associated with unsecured investments, Integer Group SA has stablished a communication channel between clients and its skilled in-house consultants.</p>                          
+                       </div>
+                  </div> 
+               </div>
+           </section>   
+         <!-- Services end -->
+
+         <!-- About start-->
+         <section id="about">
+          <div class="container_training">
+              <h1 class="heading-2">About Us</h1>
+              
+              <div class="grid two-col-grid">
+                  <div class="project">
+                      <h2 class="heading-3" style="color: black;">Financial Solutions</h2>
+                      <img src="./assets/images/course2.jpg" alt="">
+                      <div class="overlay">
+                          <div>
+                              <!-- links to full about page -->
+                              <p style="color: white;">Integer Group SA, established in 2013, is a financial services provider offering investment opportunities, online software products, and personalized coaching. The company specializes in introducing clients to online FOREX trading, a global decentralized market where currencies, indices, and commodities are traded 24/7.</p>
+                              <button class="read-more-btn" onclick="window.location.href='aboutus.html'">Read More</button>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="project">
+                      <h2 class="heading-3" style="color: black;">Our Objectives</h2>
+                      <img src="./assets/images/course2.jpeg" alt="">
+                      <div class="overlay">
+                          <div>
+                              <!-- links to full mission page -->
+                              <p style="color: white;">Integer Group SA's core day-to-day operation is based on establishing new clients and maintaining each and every portfolio fairly and in a professional manner. Experts in conducting all business within the regulation structure set out by the governing body in charge of all financial services providers.</p>
+                              <button class="read-more-btn" onclick="window.location.href='mission.html'">Read More</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+                      
+          </div>
+      </section>
+            
+         <!-- About End-->
+        
+<!-- Training Start -->
+<section id="training">
+  <div class="container_training">
+    <legend><h1 class="heading-2">FX Trading Course</h1></legend>
+
+    <div class="training-content">
+      <!-- Video on the left -->
+      <div class="video-wrapper">
+        <iframe id="trading-video" width="560" height="315" src="https://www.youtube.com/embed/2OrbczU-z30"
+                title="FX Trading Course" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+      </div>
+
+      <!-- Courses on the right -->
+      <div class="course-list">
+        <div class="course-item">
+          <h3>Beginner's FX Trading</h3>
+          <p>Learn the basics of Forex trading, including key concepts and terms.</p>
+        </div>
+        <div class="course-item">
+          <h3>Intermediate FX Strategies</h3>
+          <p>Master essential strategies to help you trade like a pro.</p>
+        </div>
+        <div class="course-item">
+          <h3>Advanced Technical Analysis</h3>
+          <p>Explore advanced analysis techniques to make better trading decisions.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- Training End -->
+
+    <!-- Reviews start -->
+        <section id="reviews">
+            <div class="container">
+                  
+              <h2 class="heading-2">Reviews</h2>
+
+               <div class="review-grid">
+                    <div class="grid-item">
+                         <img src="assets/images/person1.jpg" alt="">
+                         <h2>Ash Adams</h2>
+                          <p>I love the way they serve their clinets its truly in credible</p>                                                
+                    </div>
+                    <div class="grid-item">
+                      <img src="assets/images/person2.jpg" alt="">
+                      <h2>Kathlin Jones</h2>
+                       <p>At first I was scaptict but WOW they know their stuff</p>                      
+                    </div>
+                    <div class="grid-item">
+                      <img src="assets/images/person3.jpg" alt="">
+                      <h2>Musa Mbusa</h2>
+                       <p>I had zero confidence in Forex but with Integer, I can say Im a pro</p>                      
+                    </div>
+                    <div class="grid-item">
+                      <img src="assets/images/person4.jpg" alt="">
+                      <h2>Dr Tinashe</h2>
+                       <p>My financila Journey has be awsome with the help of Integer SA</p>                       
+                    </div>
+               </div>
+            </div>
+        </section>
+
+    <!-- Reviews End -->
+
+
+
+
+          <!-- Contact Section Start -->
+<section id="contact">
+      <div class="container">
+        
+        <h1 class="heading-2">Contact Us</h1>
+        <div class="grid two-col-grid">
+          <!-- Contact Form -->
+        <!-- Add the EmailJS SDK -->
+        <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "08pFEYG3rN_3ka-NV",
+      });
+   })();
+</script>
+
+<script type="text/javascript">
+  (function() {
+    emailjs.init("08pFEYG3rN_3ka-NV"); // Replace with your EmailJS user ID
+  })();
+</script>
+
+<!-- Contact Form -->
+<div class="contact-form-wrapper">
+  <h2 class="form-label">Enquiry Form</h2>
+  <form id="contact-form">
+    <div class="form-group">
+      <label for="name">Your Name (required)</label>
+      <input type="text" id="name" name="user_name" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Your Email (required)</label>
+      <input type="email" id="email" name="user_email" required>
+    </div>
+    <div class="form-group">
+      <label for="subject">Subject</label>
+      <input type="text" id="subject" name="user_subject" required>
+    </div>
+    <div class="form-group">
+      <label for="message">Message</label>
+      <textarea id="message" name="user_message" rows="4" required></textarea>
+    </div>
+    <button type="submit">Send Message</button>
+  </form>
+</div>
+
+
+<!-- JavaScript to handle form submission -->
+<script type="text/javascript">
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+  event.preventDefault(); // Prevent default form submission
+  
+  // Collect form data
+  const templateParams = {
+    user_name: document.getElementById('name').value,      // Ensure this matches the field name in your template
+    user_email: document.getElementById('email').value,    // Ensure this matches the field name in your template
+    user_subject: document.getElementById('subject').value, // Ensure this matches the field name in your template
+    user_message: document.getElementById('message').value // New message field
+  };
+
+  // Send email via EmailJS
+  emailjs.send('service_mdd9oul', 'template_0qkqdlw', templateParams)
+    .then(function(response) {
+      console.log('SUCCESS!', response.status, response.text);
+      alert("Message sent successfully!");
+    }, function(error) {
+      console.log('FAILED...', error);
+      alert("Failed to send message. Please try again later.");
+    });
+});
+</script>             
+    
+          <!-- Map Section -->
+          <div class="map-wrapper">
+            <h2 class="form-label">Our Location</h2>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3586.5557855873735!2d28.045574615018293!3d-26.206256183444186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950c2ac831d9e9%3A0xa8793344824b3991!2s22%20Albert%20St%2C%20Marshalltown%2C%20Johannesburg%2C%202107%2C%20South%20Africa!5e0!3m2!1sen!2sza!4v1693828798824!5m2!1sen!2sza"
+              width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section End -->
+    
+    <!-- Footer Start -->
+   <footer>
+      <div class="container">
+        <div class="grid three-col-grid">
+          
+          <!-- Company Info -->
+          <div class="footer-info">
+            <h3 class="heading-3">Integer Group SA</h3>
+            <p>22 Albert St, Marshalltown, Johannesburg, 2107, South Africa</p>
+            <p>TEL: 011 010 9520</p>
+            <p>Email: <a  href="mailto:info@integergroup.co.za" style="color: #fff;" >info@integergroup.co.za</a></p>
+            
+          </div>
+    
+          <!-- Quick Links -->
+          <div class="footer-links">
+            <h3 class="heading-3">Quick Links</h3>
+            <ul>
+              <li><a href="#hero" class="nav-link">Home</a></li>
+              <li><a href="#services" class="nav-link">Services</a></li>
+              <li><a href="#about" class="nav-link">About Us</a></li>
+              <li><a href="mission.html" class="nav-link">Mission</a></li>
+              <li><a href="#training" class="nav-link">Training</a></li>
+              <li><a href="index.html#reviews" class="nav-link">Reviews</a></li>
+              <li><a href="#contact" class="nav-link">Contact Us</a></li>
+            
+            </ul>
+          </div>
+       
+          
+          <!-- Social Media -->
+          <div class="footer-social">
+            <h3 class="heading-3">Direct Contact</h3>
+            <ul class="social-icons">
+                  <li><a href="https://www.whatsapp.com" target="_blank"><i class="lab la-whatsapp"></i></a></li>                                                
+            </ul>
+          </div>
+        </div>
+    
+        <div class="footer-bottom">
+          <p>&copy; 2024 Integer Group SA. All Rights Reserved. || Created by Happy Ndlovu</p>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+
+   
+      <!--=============== SCROLLREVEAL ===============-->
+      <script src="assets/js/scrollreveal.min.js"></script>
+
+
+      <script>
+        window.addEventListener('load', function() {
+            const loadingScreen = document.getElementById('loading-screen');
+            loadingScreen.style.display = 'none';
+        });
+      </script>
+    
+       <!-- typed js -->
+         <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <script src="assets/js/script.js"></script>
+     </body>
+</html>
