@@ -1,5 +1,6 @@
 Integer SA Website Redesign 🚀
-Welcome to the Integer SA Financial Services website redesign! This project was a comprehensive effort to modernize the user interface, enhance functionality, and deliver a user-friendly experience aligned with modern web standards.
+Welcome to the Integer SA Financial Services website redesign!
+This project was a comprehensive effort to modernize the user interface, enhance functionality, and deliver a user-friendly experience aligned with modern web standards.
 
 🌟 Project Highlights
 This redesign aimed to provide Integer SA with a sleek and professional online presence, focusing on usability and responsiveness.
@@ -35,7 +36,7 @@ Learned how to debug and resolve cross-browser compatibility issues.
 🎨 Add more interactive features to boost user engagement.
 ♿ Enhance accessibility features for broader inclusivity.
 📌 Conclusion
-Redesigning the Integer SA website was an incredible journey that strengthened my skills in frontend development, problem-solving, and design thinking. This experience has equipped me with the expertise and confidence to tackle even more ambitious projects in the future.
+Redesigning the Integer SA website was an incredible journey that strengthened my skills in frontend development, problem-solving, and design thinking.
+This experience has equipped me with the expertise and confidence to tackle even more ambitious projects in the future.
 
 If you have any questions or feedback, feel free to reach out! ✨
-
